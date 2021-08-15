@@ -7,3 +7,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Version Catalog Demo"
 include(":app")
+enableFeaturePreview("VERSION_CATALOGS")
