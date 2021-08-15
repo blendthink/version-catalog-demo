@@ -5,6 +5,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        // Currently version catalog does not work in the buildscript scope.
+        // https://github.com/gradle/gradle/issues/16958
         val libs = project.extensions.getByType<VersionCatalogsExtension>().named("libs") as org.gradle.accessors.dm.LibrariesForLibs
         classpath(libs.build.gradle)
         classpath(libs.kotlin.kotlinGradlePlugin)
