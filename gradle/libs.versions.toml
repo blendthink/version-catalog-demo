@@ -26,7 +26,7 @@ androidx-coreKtx = { module = "androidx.core:core-ktx", version.ref = "androidx-
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 
-# implementaion
+# implementation
 androidx-lifecycleRuntimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
 
 # implementation
