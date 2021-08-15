@@ -1,0 +1,53 @@
+[versions]
+build-gradle = "7.0.0"
+kotlin = "1.5.21"
+
+androidx-coreKtx = "1.6.0"
+androidx-appcompat = "1.3.1"
+material = "1.4.0"
+
+androidx-lifecycle = "2.3.1"
+
+androidx-compose = "1.0.1"
+
+androidx-activityCompose = "1.3.1"
+
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.3"
+androidx-test-espressoCore = "3.4.0"
+
+[libraries]
+# classpath
+build-gradle = { module = "com.android.tools.build:gradle", version.ref = "build-gradle" }
+kotlin-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+# implementation
+androidx-coreKtx = { module = "androidx.core:core-ktx", version.ref = "androidx-coreKtx" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+
+# implementation
+androidx-lifecycleRuntimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+
+# implementation
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "androidx-compose" }
+androidx-compose-uiToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx-compose" }
+androidx-compose-material = { module = "androidx.compose.material:material", version.ref = "androidx-compose" }
+# androidTestImplementation
+androidx-compose-uiTestJunit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "androidx-compose" }
+# debugImplementation
+androidx-compose-uiTooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx-compose" }
+
+# implementation
+androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+
+# testImplementation
+junit = { module = "junit:junit", version.ref = "junit" }
+
+# androidTestImplementation
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-test-ext-junit" }
+androidx-test-espressoCore = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-test-espressoCore" }
+
+[bundles]
+# implementation
+androidx-compose = [ "androidx-compose-ui", "androidx-compose-uiToolingPreview", "androidx-compose-material" ]
